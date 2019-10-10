@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Find the capital</title>
+   </head>
+   <body>
+      <div>
+         <form id="country-capital" action="{{url_for('country')}}" method="post">
+            Country:<input type="text" id="country" name="country" value="">
+            <script>
+               document.getElementById('country').value
+            </script>
+            <input type="submit" value="Capital city">
+         </form>
+      </div>
+      <div>
+         <p><strong>Capital: {{city}}</strong></p>
+         <p><strong>{{message}}</strong></p>
+      </div>
+   </body>
+</html>
